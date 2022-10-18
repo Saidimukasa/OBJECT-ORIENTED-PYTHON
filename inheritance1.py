@@ -8,10 +8,10 @@ class Parent:
         print("Last Name - " + self.last_name)
         print("Eye Color - " + self.eye_color)
 #inheritance    
-class Child(Parent):
+class Child(Parent): # extending the parent class
     def __init__(self, last_name, eye_color, number_of_toys):
         print("Child Constructor Called")
-        Parent.__init__(self, last_name, eye_color)
+        Parent.__init__(self, last_name, eye_color) # defining its contructor
         self.number_of_toys = number_of_toys
     def show_info(self):
         print("Last Name - " + self.last_name)
